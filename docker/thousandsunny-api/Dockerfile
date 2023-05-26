@@ -16,4 +16,4 @@ RUN apt-get update && apt-get install -y bash vim curl telnet htop wget
 EXPOSE 5000
 
 ENTRYPOINT ["python3"]
-CMD ["api/routes.py"]
+CMD ["api/app.py"]
