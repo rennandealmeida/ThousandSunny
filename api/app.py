@@ -1,6 +1,6 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template
 
-app = Flask("ThousandSunny",static_folder="./images")
+app = Flask("ThousandSunny",static_folder="api/images",template_folder="api/templates")
 
 @app.route("/", methods=["GET"])
 def Home():
